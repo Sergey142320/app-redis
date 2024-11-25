@@ -1,0 +1,21 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "app-redis",
+			"runtimeArgs": [
+				"--nolazy",
+				"-r",
+				"ts-node/register"
+			],
+			"args": [
+				"${workspaceFolder}/src/main.ts"
+			],
+			"outputCapture": "std",
+			//"console": "integratedTerminal",
+			"autoAttachChildProcesses": true
+		}
+	]
+}
